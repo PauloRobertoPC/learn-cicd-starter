@@ -18,7 +18,7 @@ func TestGetAPIKey(t *testing.T) {
 		"Empty":     {input: t1, expectedS: "", expectedErr: true},
 		"No Method": {input: t2, expectedS: "", expectedErr: true},
 		"No ApiKey": {input: t3, expectedS: "", expectedErr: true},
-		"ApiKey":    {input: t4, expectedS: "key-of-accesss", expectedErr: false},
+		"ApiKey":    {input: t4, expectedS: "key-of-access", expectedErr: false},
 	}
 
 	for name, tc := range tests {
